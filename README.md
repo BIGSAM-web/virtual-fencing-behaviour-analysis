@@ -207,3 +207,37 @@ From the repository root:
 
 ```bash
 Rscript analysis/virtual_fencing_analysis.R
+```
+
+The script validates the input datasets and reproduces the main herd-level metrics, individual summaries and investigation categories.
+
+Generated outputs are stored in [`analysis/outputs/`](analysis/outputs/).
+
+Detailed methodology, assumptions and limitations are documented in [`docs/README.md`](docs/README.md).
+
+## Repository structure
+
+```text
+virtual-fencing-behaviour-analysis/
+├── analysis/
+│   ├── outputs/
+│   ├── README.md
+│   └── virtual_fencing_analysis.R
+├── dashboard/
+│   ├── README.md
+│   └── virtual_fencing_dashboard.png
+├── data/
+│   ├── README.md
+│   ├── animals.csv
+│   ├── daily_summary.csv
+│   └── vf_events.csv
+├── docs/
+│   └── README.md
+└── README.md
+```
+
+## Project focus
+
+This project is intended to demonstrate the practical combination of **animal science, farm-system understanding, data analysis and decision support**.
+
+The emphasis is not simply on identifying an unusual number. It is on determining whether the available evidence is sufficient, identifying what the data can and cannot explain, and translating the result into a sensible next investigation step.
